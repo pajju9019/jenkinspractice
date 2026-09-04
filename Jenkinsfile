@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                checkout scm
-            }
-        }
-
         stage('Python Test') {
             steps {
                 sh 'python3 sum_two_numbers.py'
